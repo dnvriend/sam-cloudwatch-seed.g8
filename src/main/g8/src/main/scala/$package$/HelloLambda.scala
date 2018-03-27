@@ -20,6 +20,6 @@ import com.github.dnvriend.lambda.annotation.CloudWatchConf
   }""")
 class CloudWatchLambda extends CloudWatchEventHandler {
   override def handle(event: CloudWatchEvent, ctx: SamContext): Unit = {
-    println(s"Triggered by the following CloudWatchEvent: '$event'")
+    println("Triggered by the following CloudWatchEvent: " +  event)
   }
 }
